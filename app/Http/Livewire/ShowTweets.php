@@ -26,8 +26,9 @@ class ShowTweets extends Component
     }
 
     public function create(){
-        //dd($this->content);
+
         $this->validate();
+
         /*
         Tweet::create([
             'content' => $this->content,
@@ -41,5 +42,16 @@ class ShowTweets extends Component
         ]);
 
         $this->content = '';
+    }
+
+    public function like($idTweet){
+        $tweet = Tweet::findOrFail($idTweet);
+        $tweet->likes()->create([
+            'user_id' => auth()->user()->id,
+        ]);
+    }
+
+    public function unlike(Tweet $tweet){
+        $tweet->likes()->delete();
     }
 }
