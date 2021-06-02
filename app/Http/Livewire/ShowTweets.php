@@ -8,7 +8,7 @@ use App\Models\Tweet;
 class ShowTweets extends Component
 {
 
-    public $messages = 'Apenas um teste';
+    public $message = 'Apenas um teste';
 
     public function render()
     {
@@ -16,5 +16,16 @@ class ShowTweets extends Component
         return view('livewire.show-tweets', [
             'tweets' => $tweets
         ]);
+    }
+
+    public function create(){
+        //dd($this->messages);
+
+        Tweet::create([
+            'content' => $this->message,
+            'user_id' => 1
+        ]);
+
+        $this->message = '';
     }
 }
