@@ -2,14 +2,39 @@
 
 
 
-## Projetinho em Laravel Livewire
+## Projetinho em Laravel Livewire - pequeno clone do Twitter
 
-Uma ótima alternativa ao jquery, pretendo fazer novos projetos e postar aqui utilizando Jetstream, Tailwind e Livewire.
+Uma ótima alternativa ao jQuery, pretendo fazer novos projetos e postar aqui utilizando Jetstream, Tailwind e Livewire.
+O projetinho consiste em um pequeno clone do Twitter com Tweets, like e deslike, para conhecer a ferramenta que foi amor a primeira codada.
 
+## Configurações Laravel
 
-## Algumas anotações que fiz, 
+Na raiz do projeto.
 
-<p align="center">Passo a passo para configuração.</p>
+```
+$ composer install/update
+$ composer dumpautoload
+$ cp .env.example .env
+```
+
+No .env
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE= O_BD_QUE_VC_VAI_USAR
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Rode os comandos no terminal
+```
+$ php artisan key:generate
+$ php artisan migrate #antes de rodar este comando verifique sua configuracao com banco em .env
+```
+## Algumas anotações que fiz 
+
+<p align="center">Passo a passo para configuração do Livewire.</p>
 
 - @livewireStyles - <livewire:styles /> no cabeçalho para os estilos;
 - @livewireScripts - <livewire:scripts /> no fim do body para os scripts;
