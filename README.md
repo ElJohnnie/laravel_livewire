@@ -4,7 +4,7 @@
 
 ## Projetinho em Laravel Livewire - pequeno clone do Twitter - Especializa TI
 
-Uma ótima alternativa ao jQuery, pretendo fazer novos projetos e postar aqui utilizando Jetstream, Tailwind e Livewire.
+Uma ótima alternativa para uso de assincronicidade no php, pretendo fazer novos projetos e postar aqui utilizando Jetstream, Tailwind e Livewire.
 O projetinho consiste em um pequeno clone do Twitter com Tweets, like e deslike, para conhecer a ferramenta que foi amor a primeira codada.
 
 ## Configurações Laravel
